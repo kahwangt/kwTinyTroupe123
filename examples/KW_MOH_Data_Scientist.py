@@ -10,8 +10,9 @@ import tinytroupe
 from tinytroupe.agent import TinyPerson
 from tinytroupe.environment import TinyWorld
 
-# Load KW from his agent specification
+# Load KW and apply the MOH health sentiment analyst fragment
 kw = TinyPerson.load_specification("./agents/KW.agent.json")
+kw + "./fragments/moh_health_sentiment_analyst.fragment.json"
 
 print("=" * 60)
 print("KW loaded. Starting interaction.\n")
